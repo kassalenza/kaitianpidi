@@ -30,8 +30,6 @@ echo $remote_repository
 # exit 0
 # 如果没有远程仓库，则添加
 if [ -z "$remote_repository" ]; then
-  # remote_url="git@github.com:kassalenzaaa/radic.git"
-  # remote_url="git@code.alibaba-inc.com:zh01771702/cmder_agt.git"
   remote_url="git@code.alibaba-inc.com:zh01771702/check_ebs_write.git"
   git remote add origin "$remote_url"
   if [ $? -ne 0 ]; then
